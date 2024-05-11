@@ -5,9 +5,9 @@ import Loader from './common/Loader';
 import PageTitle from './components/PageTitle';
 import SignIn from './pages/Authentication/SignIn';
 import SignUp from './pages/Authentication/SignUp';
-import Calendar from './pages/Calendar';
+// import Calendar from './pages/Calendar';
 import Chart from './pages/Chart';
-import ECommerce from './pages/Dashboard/ECommerce';
+import Dash from './pages/Dashboard/ECommerce';
 import FormElements from './pages/Form/FormElements';
 import FormLayout from './pages/Form/FormLayout';
 import Profile from './pages/Profile';
@@ -15,7 +15,7 @@ import Settings from './pages/Settings';
 import Tables from './pages/Tables';
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
-
+import Patients from './mypgaes/allpages/Patients'
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
   const { pathname } = useLocation();
@@ -37,21 +37,21 @@ function App() {
           index
           element={
             <>
-              <PageTitle title="eCommerce Dashboard | TailAdmin - Tailwind CSS Admin Dashboard Template" />
-              <ECommerce />
+              <PageTitle title=" Dashboard " />
+              <Dash />
             </>
           }
         />
         <Route
-          path="/calendar"
+          path="/patient"
           element={
             <>
-              <PageTitle title="Calendar | TailAdmin - Tailwind CSS Admin Dashboard Template" />
-              <Calendar />
+              <PageTitle title="patient " />
+              <Patients />
             </>
           }
         />
-        <Route
+        {/* <Route
           path="/profile"
           element={
             <>
@@ -59,8 +59,8 @@ function App() {
               <Profile />
             </>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/forms/form-elements"
           element={
             <>
@@ -68,8 +68,8 @@ function App() {
               <FormElements />
             </>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/forms/form-layout"
           element={
             <>
@@ -77,8 +77,8 @@ function App() {
               <FormLayout />
             </>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/tables"
           element={
             <>
@@ -86,8 +86,8 @@ function App() {
               <Tables />
             </>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/settings"
           element={
             <>
@@ -95,8 +95,8 @@ function App() {
               <Settings />
             </>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/chart"
           element={
             <>
@@ -104,8 +104,8 @@ function App() {
               <Chart />
             </>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/ui/alerts"
           element={
             <>
@@ -113,8 +113,8 @@ function App() {
               <Alerts />
             </>
           }
-        />
-        <Route
+        /> */}
+        {/* <Route
           path="/ui/buttons"
           element={
             <>
@@ -122,7 +122,7 @@ function App() {
               <Buttons />
             </>
           }
-        />
+        /> */}
         <Route
           path="/auth/signin"
           element={
