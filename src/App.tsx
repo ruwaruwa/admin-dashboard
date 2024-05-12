@@ -16,6 +16,9 @@ import Tables from './pages/Tables';
 import Alerts from './pages/UiElements/Alerts';
 import Buttons from './pages/UiElements/Buttons';
 import Patients from './mypgaes/allpages/Patients'
+import AddPatients from './mypgaes/allpages/Addpatien'
+import Service from './mypgaes/allpages/Service'
+import ServiceDis from './mypgaes/allpages/ServiceD'
 function App() {
   const [loading, setLoading] = useState<boolean>(true);
   const { pathname } = useLocation();
@@ -48,9 +51,28 @@ function App() {
             <>
               <PageTitle title="patient " />
               <Patients />
-            </>
-          }
-        />
+            </> } />
+            {/* <Route
+          path="/service"
+          element={
+            <>
+              <PageTitle title="Service " />
+              <Service />
+            </> } /> */}
+            <Route
+          path="/service"
+          element={
+            <>
+              <PageTitle title="Service " />
+              <ServiceDis />
+            </> } />
+            <Route
+          path="Addpatien"
+          element={
+            <>
+              {/* <PageTitle title=" " /> */}
+              <AddPatients/>
+            </> } />
         {/* <Route
           path="/profile"
           element={
